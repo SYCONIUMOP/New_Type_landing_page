@@ -101,7 +101,7 @@ html , body{
     /* background-color: red; */
 }
 .elem h1{
-    font-size: 6vw;
+    font-size: 10vw;
 }
 .image-content{
     height: 55%;
@@ -118,9 +118,21 @@ html , body{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    position: relative;
+    animation: imgmove 15s 2s infinite;
+    transition: all ease-in-out 5s;
 }
-.page-2{
-    height: 100%;
-    width: 100%;
-    background-color: yellow;
+@keyframes imgmove {
+    0%{
+        right: 0%;
+    }
+    25%{
+        right: 100%;
+    }
+    50%{
+        right: 200%;
+    }
+    75%{
+        right: 0%;
+    }
 }
